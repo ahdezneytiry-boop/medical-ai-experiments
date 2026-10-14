@@ -16,11 +16,11 @@ def label_level(job_name):
 
 # -------------------------- 1. 读取所有需整合的数据 --------------------------
 # 原始预处理数据（基础信息）
-raw_df = pd.read_csv("C:\\Users\\ahdezneytiry-boop1\\Desktop\\招聘数据_合并预处理后.csv", encoding="gbk")
+raw_df = pd.read_csv("data/招聘数据_合并预处理后.csv", encoding="gbk")
 # 薪资结构化数据
-salary_df = pd.read_csv("C:\\Users\\ahdezneytiry-boop1\\Desktop\\招聘数据_薪资结构化后.csv", encoding="gbk")
+salary_df = pd.read_csv("data/招聘数据_薪资结构化后.csv", encoding="gbk")
 # 特征矩阵（用于提取关键词）
-feat_df = pd.read_csv("C:\\Users\\ahdezneytiry-boop1\\Desktop\\招聘数据_特征矩阵_基础版.csv", encoding="gbk")
+feat_df = pd.read_csv("data/招聘数据_特征矩阵_基础版.csv", encoding="gbk")
 tfidf_cols = [col for col in feat_df.columns if col.startswith("tfidf_")]
 
 # -------------------------- 2. 关键修复：生成“岗位层级”列（直接在代码中生成） --------------------------
@@ -67,7 +67,7 @@ final_df.drop_duplicates(subset=["岗位名称_cleaned", "公司"], inplace=True
 final_df["岗位层级"].fillna(2, inplace=True)  # 兜底处理（实际不会缺失）
 
 # -------------------------- 5. 保存最终结构化表 --------------------------
-save_path = "C:\\Users\\ahdezneytiry-boop1\\Desktop\\数据分析师岗位_结构化成果表.csv"
+save_path = "data/数据分析师岗位_结构化成果表.csv"
 final_df.to_csv(save_path, index=False, encoding="gbk")
 print(f"\n✅ 结构化成果表已保存：{save_path}")
 print(f"📊 数据规模：{len(final_df)}条有效岗位数据，{len(final_cols)}个核心字段")

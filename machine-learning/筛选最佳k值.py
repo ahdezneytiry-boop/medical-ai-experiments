@@ -12,7 +12,7 @@ plt.rcParams["font.sans-serif"] = ["Microsoft YaHei", "SimSun", "Arial Unicode M
 plt.rcParams["axes.unicode_minus"] = False
 
 # 2. 数据读取
-data_path = r"C:\Users\ahdezneytiry-boop1\Desktop\实验三\diabetes (1).csv"
+data_path = "data/diabetes (1).csv"
 data = pd.read_csv(data_path)
 
 # 3. 数据预处理

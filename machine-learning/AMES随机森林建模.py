@@ -21,7 +21,7 @@ class ExperimentConfig:
     实验参数配置类：统一管理建模过程中的关键参数，确保实验可复现
     """
     # 数据路径（需根据本地环境调整）
-    data_path = r"E:\jqxx\机器学习大作业\机器学习数据\ames_cls_final_data.csv"
+    data_path = "data/ames_cls_final_data.csv"
     # 数据集划分策略：基于分子骨架（scaffold）划分，避免结构泄露
     split_strategy = "scaffold"
     # 随机种子：固定为42，保证不同实验间结果一致性

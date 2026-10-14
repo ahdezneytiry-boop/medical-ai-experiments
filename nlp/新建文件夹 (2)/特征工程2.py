@@ -4,8 +4,8 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
 
 # 1. 加载数据（特征矩阵+原始文本，用于标注层级）
-feat_df = pd.read_csv("C:\\Users\\ahdezneytiry-boop1\\Desktop\\招聘数据_特征矩阵_基础版.csv", encoding='gbk')
-raw_df = pd.read_csv("C:\\Users\\ahdezneytiry-boop1\\Desktop\\招聘数据_合并预处理后.csv", encoding='gbk')
+feat_df = pd.read_csv("data/招聘数据_特征矩阵_基础版.csv", encoding='gbk')
+raw_df = pd.read_csv("data/招聘数据_合并预处理后.csv", encoding='gbk')
 
 # 2. 手动标注层级标签（示例规则，可扩展）
 def label_level(job_name):

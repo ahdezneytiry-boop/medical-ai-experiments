@@ -5,7 +5,7 @@ import os
 
 # -------------------------- 1. 本地加载数据（无联网需求） --------------------------
 def load_merged_data():
-    data_path = "C:\\Users\\ahdezneytiry-boop1\\Desktop\\招聘数据_合并预处理后.csv"
+    data_path = "data/招聘数据_合并预处理后.csv"
     # 检查文件是否存在
     if not os.path.exists(data_path):
         print(f"❌ 请确认文件在桌面：{data_path}")
@@ -65,10 +65,10 @@ df_with_features, bow_vec, tfidf_vec = extract_basic_features(df)
 
 # -------------------------- 3. 保存结果到桌面（GBK编码，避免中文乱码） --------------------------
 def save_results(df):
-    full_path = "C:\\Users\\ahdezneytiry-boop1\\Desktop\\招聘数据_特征工程后_基础版.csv"
+    full_path = "data/招聘数据_特征工程后_基础版.csv"
     # 单独保存纯特征矩阵（建模直接用）
     feature_cols = [col for col in df.columns if col.startswith(("bow_", "tfidf_"))]
-    matrix_path = "C:\\Users\\ahdezneytiry-boop1\\Desktop\\招聘数据_特征矩阵_基础版.csv"
+    matrix_path = "data/招聘数据_特征矩阵_基础版.csv"
     
     df.to_csv(full_path, index=False, encoding='gbk')
     df[feature_cols].to_csv(matrix_path, index=False, encoding='gbk')

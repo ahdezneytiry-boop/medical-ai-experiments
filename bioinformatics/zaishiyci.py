@@ -14,7 +14,7 @@ if plt.rcParams['font.family'] == 'sans-serif':
 rcParams['axes.unicode_minus'] = False        # 负号显示
 
 # 2. 数据读取（假设路径正确）
-df = pd.read_excel("E:\新建\附件1.xlsx")
+df = pd.read_excel("data/附件1.xlsx")
 
 # 3. 数据统计（新增排序优化）
 team_counts = df['车队编码'].value_counts().sort_index()  # 按车队编码升序排列

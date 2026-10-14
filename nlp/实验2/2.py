@@ -3,7 +3,7 @@ import numpy as np
 from sklearn.preprocessing import OneHotEncoder
 
 # 读取数据
-df = pd.read_csv(r"C:\Users\ahdezneytiry-boop1\Desktop\实验2\peptide.csv", header=0)
+df = pd.read_csv("data/peptide.csv", header=0)
 sequences = df.iloc[:, 0].values  # 提取肽段序列
 print("肽段序列数量：", len(sequences))
 print("序列长度：", len(sequences[0]))

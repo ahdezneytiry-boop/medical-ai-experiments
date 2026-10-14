@@ -5,8 +5,8 @@ from collections import Counter
 
 def load_and_align_fields():
     # 加载数据
-    liepin_path = "C:\\Users\\ahdezneytiry-boop1\\Desktop\\猎聘-列表页-限云采集.csv"
-    job51_path = "C:\\Users\\ahdezneytiry-boop1\\Desktop\\前程无忧-搜索关键词采集列表页.csv"
+    liepin_path = "data/猎聘-列表页-限云采集.csv"
+    job51_path = "data/前程无忧-搜索关键词采集列表页.csv"
     liepin_df = pd.read_csv(liepin_path, encoding='utf-8').fillna("")
     job51_df = pd.read_csv(job51_path, encoding='utf-8').fillna("")
 
@@ -138,7 +138,7 @@ merged_text_statistics(merged_df)
 
 
 # -------------------------- 5. 保存合并后数据 --------------------------
-save_path = "C:\\Users\\ahdezneytiry-boop1\\Desktop\\招聘数据_合并预处理后.csv"
+save_path = "data/招聘数据_合并预处理后.csv"
 merged_df.to_csv(save_path, index=False, encoding='utf-8')
 print(f"\n合并数据已保存至：{save_path}")
 print(f"   数据包含字段：{list(merged_df.columns)}")

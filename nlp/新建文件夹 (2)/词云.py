@@ -14,7 +14,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 
 # -------------------------- 1. 读取数据分析师岗位数据 --------------------------
 def read_job_data():
-    csv_path = "C:\\Users\\ahdezneytiry-boop1\\Desktop\\招聘数据_合并预处理后.csv"
+    csv_path = "data/招聘数据_合并预处理后.csv"
     df = pd.read_csv(csv_path, encoding="gbk")
     
     all_words = []

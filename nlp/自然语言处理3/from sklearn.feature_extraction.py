@@ -42,8 +42,8 @@ def segment_with_filter(text):
     return filtered_words
 
 # 读取文档
-doc1_path = r"C:\Users\ahdezneytiry-boop1\Desktop\基于网络爬虫的智能医学工程专业岗位的社会需求分析.docx"
-doc2_path = r"C:\Users\ahdezneytiry-boop1\Desktop\对招聘网站中数据分析师数据的爬取和分析.docx"
+doc1_path = "data/基于网络爬虫的智能医学工程专业岗位的社会需求分析.docx"
+doc2_path = "data/对招聘网站中数据分析师数据的爬取和分析.docx"
 doc1_text = read_and_clean_docx(doc1_path)
 doc2_text = read_and_clean_docx(doc2_path)
 doc1_words = segment_with_filter(doc1_text)

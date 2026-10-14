@@ -167,7 +167,7 @@ print("步骤1：数据加载 + 数据层面优化")
 print("="*60)
 
 # 核心：数据集路径（已适配用户路径，确保存在）
-DATA_FILE = check_and_make_dir(r"E:\jqxx\机器学习大作业\特征工程\bbb_feature_engineering_result.csv")
+DATA_FILE = check_and_make_dir("data/bbb_feature_engineering_result.csv")
 try:
     # 加载数据（填充缺失值：数值型用中位数，避免极端值影响）
     df = pd.read_csv(DATA_FILE)

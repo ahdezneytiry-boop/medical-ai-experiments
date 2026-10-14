@@ -11,7 +11,7 @@ plt.rcParams['axes.unicode_minus'] = False
 sns.set(font='SimHei')
 
 # 读取文件，根据实际情况修改文件路径
-data = pd.read_excel(r"C:\Users\ahdezneytiry-boop1\Desktop\实验2\dummy.xlsx")
+data = pd.read_excel("data/dummy.xlsx")
 
 print(data)
 print("data head:\n", data.head())

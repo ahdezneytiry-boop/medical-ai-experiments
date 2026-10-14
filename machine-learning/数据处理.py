@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 
 # 加载数据
-df = pd.read_csv(r"C:\Users\ahdezneytiry-boop1\Desktop\实验三\UCIHeartDisease_Original.csv")
+df = pd.read_csv("data/UCIHeartDisease_Original.csv")
 
 # 将'?'替换为NaN
 df['ca'] = df['ca'].replace('?', np.nan)
@@ -38,5 +38,5 @@ print("\n目标变量分布：")
 print(df['target'].value_counts().sort_index())
 
 # 保存处理后的数据用于后续分析
-df.to_csv(r"C:\Users\ahdezneytiry-boop1\Desktop\实验三\UCIHeartDisease_Original处理结果.csv", index=False)
+df.to_csv("data/UCIHeartDisease_Original处理结果.csv", index=False)
 print("好了，结束了")

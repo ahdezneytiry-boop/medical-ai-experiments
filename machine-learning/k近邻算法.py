@@ -10,7 +10,7 @@ plt.rcParams["font.family"] = ["SimHei"]
 plt.rcParams["axes.unicode_minus"] = False
 
 # 2. 读取数据
-data = pd.read_csv(r"C:\Users\ahdezneytiry-boop1\Desktop\实验三\diabetes (1).csv")  
+data = pd.read_csv("data/diabetes (1).csv")  
 print("数据集预览：")
 print(data.head())
 

@@ -9,9 +9,9 @@ import random
 
 # -------------------------- 全局配置（路径+中文显示） --------------------------
 # 本地文件路径（桌面）
-FEAT_PATH = "C:\\Users\\ahdezneytiry-boop1\\Desktop\\招聘数据_特征矩阵_基础版.csv"
-RAW_PATH = "C:\\Users\\ahdezneytiry-boop1\\Desktop\\招聘数据_合并预处理后.csv"
-SALARY_PATH = "C:\\Users\\ahdezneytiry-boop1\\Desktop\\招聘数据_薪资结构化后.csv"
+FEAT_PATH = "data/招聘数据_特征矩阵_基础版.csv"
+RAW_PATH = "data/招聘数据_合并预处理后.csv"
+SALARY_PATH = "data/招聘数据_薪资结构化后.csv"
 # 中文显示配置
 plt.rcParams['font.sans-serif'] = ['SimHei']
 plt.rcParams['axes.unicode_minus'] = False

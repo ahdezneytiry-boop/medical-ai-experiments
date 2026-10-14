@@ -27,7 +27,7 @@ plt.rcParams["axes.unicode_minus"] = False
 # ==============================
 class Config:
     # 数据路径：适配本地环境，若数据集与代码同文件夹，直接写"ames_cls_final_data.csv"
-    data_path =r"E:\jqxx\机器学习大作业\机器学习数据\ames_cls_final_data.csv" # 服务器路径，本地使用时改为"ames_cls_final_data.csv"
+    data_path ="data/ames_cls_final_data.csv" # 服务器路径，本地使用时改为"ames_cls_final_data.csv"
     # 任务类型：AMES致突变性为分类任务（1=致突变，0=非致突变）
     task_type = "classification"
     # 特征类型：Morgan指纹（捕捉分子结构细节，适合致突变性预测）

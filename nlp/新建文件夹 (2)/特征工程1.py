@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 
 # 1. 加载特征矩阵（仅TF-IDF特征）
-feat_matrix_path = "C:\\Users\\ahdezneytiry-boop1\\Desktop\\招聘数据_特征矩阵_基础版.csv"
+feat_matrix_path = "data/招聘数据_特征矩阵_基础版.csv"
 feat_df = pd.read_csv(feat_matrix_path, encoding='gbk')
 
 # 2. 筛选TF-IDF特征列，计算每个关键词的平均权重（全样本重要性）

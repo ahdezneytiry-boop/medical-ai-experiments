@@ -13,7 +13,7 @@ plt.rcParams['axes.unicode_minus'] = False        # 解决负号显示为方块�
 sns.set(font='SimHei')                             # Seaborn中文设置
 
 # 读取数据（请确保dummy.xls路径正确，若路径错误需修改）
-data = pd.read_excel(r"C:\Users\ahdezneytiry-boop1\Desktop\实验2\dummy.xlsx")
+data = pd.read_excel("data/dummy.xlsx")
 
 # 数据基础信息查看
 print("=== 原始数据 ===")

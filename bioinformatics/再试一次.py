@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 plt.rcParams['axes.unicode_minus'] = False
 
 # 数据读取与统计（保持不变）
-df = pd.read_excel("E:\新建\附件1.xlsx")
+df = pd.read_excel("data/附件1.xlsx")
 team_counts = df['车队编码'].value_counts().sort_index()
 
 # 创建画布

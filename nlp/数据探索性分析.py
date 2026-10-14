@@ -8,7 +8,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 
 # -------------------------- 1. 读取BBB数据（含原训练/测试标签） --------------------------
-df = pd.read_csv(r"E:\jqxx\机器学习大作业\bbb_cls_final_data.csv")
+df = pd.read_csv("data/bbb_cls_final_data.csv")
 
 # 先确认原数据中是否有"random_train_test_label"列（关键！）
 if "random_train_test_label" not in df.columns:

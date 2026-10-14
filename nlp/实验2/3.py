@@ -2,7 +2,7 @@ import pandas as pd
 from sklearn.feature_extraction.text import CountVectorizer
 
 # 读取数据
-df = pd.read_csv(r"C:\Users\ahdezneytiry-boop1\Desktop\实验2\peptide.csv", header=0)
+df = pd.read_csv("data/peptide.csv", header=0)
 sequences = df.iloc[:, 0].values
 
 # 初始化CountVectorizer（字符级）

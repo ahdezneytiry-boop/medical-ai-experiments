@@ -14,7 +14,7 @@ import xgboost as xgb
 # - mol_struct_vec_0~mol_struct_vec_99：分子结构向量（共100维，预处理后的数据）
 # - logP、molecular_weight、h_bond_donor：标准化后的理化特征
 # - oral_bioavailability：真实口服生物利用度（目标变量，回归任务）
-data = pd.read_csv(r"C:\Users\ahdezneytiry-boop1\Downloads\bbb_cls_final_data.csv")
+data = pd.read_csv("data/bbb_cls_final_data.csv")
 
 # 分离特征与目标变量
 # 分子结构向量（假设100维，根据实际维度调整列名）

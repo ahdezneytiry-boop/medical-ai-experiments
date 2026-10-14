@@ -60,7 +60,7 @@ def extract_salary(salary_text):
 
 # -------------------------- 加载数据+批量抽取 --------------------------
 # 加载含薪资文本的原始数据（确保路径正确）
-raw_df = pd.read_csv("C:\\Users\\ahdezneytiry-boop1\\Desktop\\招聘数据_合并预处理后.csv", encoding='gbk')
+raw_df = pd.read_csv("data/招聘数据_合并预处理后.csv", encoding='gbk')
 
 # 批量抽取薪资信息（新增进度提示）
 print("🔄 开始批量抽取薪资信息...")
@@ -89,6 +89,6 @@ display_cols = ['岗位名称_cleaned', '薪资', '最低薪资(k/月)', '最高
 print(raw_df[display_cols].head(15).to_string(index=False))
 
 # 保存结果到桌面（覆盖原文件或新建，避免丢失）
-save_path = "C:\\Users\\ahdezneytiry-boop1\\Desktop\\招聘数据_薪资结构化后.csv"
+save_path = "data/招聘数据_薪资结构化后.csv"
 raw_df.to_csv(save_path, index=False, encoding='gbk')
 print(f"\n💾 已保存结构化结果到：{save_path}")
