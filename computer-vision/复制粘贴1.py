@@ -1,0 +1,20 @@
+from PIL import Image
+from pylab import *
+im = Image.open(r"E:\计算机视觉\photo\JPG.jpg")
+subplot(131)
+title("(a)")
+axis("off")
+imshow(im)
+
+box=(100,500,400,700)
+subplot(132)
+title("(b)")
+axis("off")
+imshow(im.crop(box))
+region = im.crop(box)
+im.paste(region,(300,200),None)
+subplot(133)
+title("(c)")
+axis("off")
+imshow(im)
+show()
